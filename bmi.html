@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bmi</title>
+    <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body>
+<body class="justify-center text-center font-extrabold text-3xl p-20  bg-[url('https://thumbs.dreamstime.com/b/abstract-medical-background-blurred-interior-hospital-154377916.jpg?w=992')] bg-no-repeat bg-cover">
     <main>
-        <div> 
+        <div>
             <ul>
                 <li>
-                    <label for="height">height</label>
-                    <input type="number" name="height" id="height" placeholder="your height in meters" required>
+                    <label for="height">Height</label>
+                    <input type="number" name="height" id="height" placeholder="input your height in meters" class="bg-transparent text-xl" required>
                 </li>
                 <li>
-                    <label for="weight">weight</label>
-                    <input type="number" name="weight" id="weight" placeholder="your weight in kg" required>
+                    <label for="weight">Weight</label>
+                    <input type="number" name="weight" id="weight" placeholder="input your weight in kg" class="bg-transparent text-xl" required>
                 </li>
                 <li>
-                <button>check bmi</button>
+                <button class="border rounded-xl p-5 bg-gray-500 hover:bg-transparent">Check bmi</button>
                 </li>
             </ul>
         </div>
@@ -51,7 +52,7 @@
              else{
                 status = 'underweight'
             }
-            return para.textContent = `your bmi = ${val.toFixed(2)} and you are ${status}`
+            return para.textContent = `Your bmi = ${val.toFixed(2)} and you are ${status}`
             
         }
         bmi()
