@@ -663,13 +663,12 @@ video {
   clear: none;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.ml-\[40\%\] {
+  margin-left: 40%;
 }
 
 .mt-2 {
@@ -678,18 +677,6 @@ video {
 
 .mt-\[200px\] {
   margin-top: 200px;
-}
-
-.ml-\[20\%\] {
-  margin-left: 20%;
-}
-
-.ml-\[30\%\] {
-  margin-left: 30%;
-}
-
-.ml-\[40\%\] {
-  margin-left: 40%;
 }
 
 .box-border {
@@ -1635,12 +1622,12 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-b {
@@ -1767,6 +1754,10 @@ video {
   border-style: none;
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -1777,18 +1768,13 @@ video {
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-gray-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-\[url\(\'https\:\/\/thumbs\.dreamstime\.com\/b\/abstract-medical-background-blurred-interior-hospital-154377916\.jpg\?w\=992\'\)\] {
@@ -2040,6 +2026,23 @@ video {
   line-height: 1.75rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2135,14 +2138,14 @@ video {
   color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
-.text-yellow-200 {
-  --tw-text-opacity: 1;
-  color: rgb(254 240 138 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-200 {
+  --tw-text-opacity: 1;
+  color: rgb(254 240 138 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2537,6 +2540,12 @@ video {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-\[150px\] {
+    font-size: 150px;
   }
 }
 
